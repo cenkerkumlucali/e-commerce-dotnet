@@ -1,0 +1,354 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/ECommerce.WebApi.csproj": {}
+  },
+  "projects": {
+    "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj",
+        "projectName": "ECommerce.Application",
+        "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Domain/ECommerce.Domain.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Domain/ECommerce.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Domain/ECommerce.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Domain/ECommerce.Domain.csproj",
+        "projectName": "ECommerce.Domain",
+        "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Domain/ECommerce.Domain.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
+        "projectName": "ECommerce.Infrastructure",
+        "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/ECommerce.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/ECommerce.Persistence.csproj",
+        "projectName": "ECommerce.Persistence",
+        "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/ECommerce.Persistence.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0-preview.3.22175.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/ECommerce.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/ECommerce.WebApi.csproj",
+        "projectName": "ECommerce.WebApi",
+        "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/ECommerce.WebApi.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/ECommerce.Persistence.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/ECommerce.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

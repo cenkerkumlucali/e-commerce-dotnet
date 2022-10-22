@@ -1,0 +1,17 @@
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/bin/Debug/net6.0/ECommerce.Persistence.deps.json
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/bin/Debug/net6.0/ECommerce.Persistence.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/bin/Debug/net6.0/ECommerce.Persistence.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/bin/Debug/net6.0/ECommerce.Application.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/bin/Debug/net6.0/ECommerce.Domain.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/bin/Debug/net6.0/ECommerce.Application.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/bin/Debug/net6.0/ECommerce.Domain.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ECommerce.Persistence.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ECommerce.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ECommerce.Persistence.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ECommerce.Persistence.AssemblyInfo.cs
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ECommerce.Persistence.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ECommerce.Persistence.csproj.CopyComplete
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ECommerce.Persistence.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/refint/ECommerce.Persistence.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ECommerce.Persistence.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/obj/Debug/net6.0/ref/ECommerce.Persistence.dll

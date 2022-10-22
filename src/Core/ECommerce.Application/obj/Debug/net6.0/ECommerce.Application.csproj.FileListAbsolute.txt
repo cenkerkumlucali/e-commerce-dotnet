@@ -1,0 +1,15 @@
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/bin/Debug/net6.0/ECommerce.Application.deps.json
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/bin/Debug/net6.0/ECommerce.Application.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/bin/Debug/net6.0/ECommerce.Application.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/bin/Debug/net6.0/ECommerce.Domain.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/bin/Debug/net6.0/ECommerce.Domain.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ECommerce.Application.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ECommerce.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ECommerce.Application.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ECommerce.Application.AssemblyInfo.cs
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ECommerce.Application.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ECommerce.Application.csproj.CopyComplete
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ECommerce.Application.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/refint/ECommerce.Application.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ECommerce.Application.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/obj/Debug/net6.0/ref/ECommerce.Application.dll

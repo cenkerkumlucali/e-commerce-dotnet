@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "hlXfuGRYbIUbBmib9A/Nr743PbnOz3Z3Wl6pQE+VXsM=",
+  "Source": "ECommerce.WebApi",
+  "BasePath": "_content/ECommerce.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ECommerce.WebApi/wwwroot",
+      "Source": "ECommerce.WebApi",
+      "ContentRoot": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/",
+      "BasePath": "_content/ECommerce.WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/.DS_Store",
+      "SourceId": "ECommerce.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/",
+      "BasePath": "_content/ECommerce.WebApi",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/resource/.DS_Store",
+      "SourceId": "ECommerce.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/",
+      "BasePath": "_content/ECommerce.WebApi",
+      "RelativePath": "resource/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/resource/.DS_Store"
+    },
+    {
+      "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/resource/files/kahve-fotoğrafi.jpeg",
+      "SourceId": "ECommerce.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/",
+      "BasePath": "_content/ECommerce.WebApi",
+      "RelativePath": "resource/files/kahve-fotoğrafi.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/resource/files/kahve-fotoğrafi.jpeg"
+    },
+    {
+      "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/resource/product-images/kahve-fotoğrafi.jpeg",
+      "SourceId": "ECommerce.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/",
+      "BasePath": "_content/ECommerce.WebApi",
+      "RelativePath": "resource/product-images/kahve-fotoğrafi.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/resource/product-images/kahve-fotoğrafi.jpeg"
+    }
+  ]
+}

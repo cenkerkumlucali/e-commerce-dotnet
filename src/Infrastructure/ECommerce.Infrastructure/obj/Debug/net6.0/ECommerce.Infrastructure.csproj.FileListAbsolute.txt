@@ -1,0 +1,17 @@
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/bin/Debug/net6.0/ECommerce.Infrastructure.deps.json
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/bin/Debug/net6.0/ECommerce.Infrastructure.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/bin/Debug/net6.0/ECommerce.Infrastructure.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/bin/Debug/net6.0/ECommerce.Application.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/bin/Debug/net6.0/ECommerce.Domain.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/bin/Debug/net6.0/ECommerce.Application.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/bin/Debug/net6.0/ECommerce.Domain.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ECommerce.Infrastructure.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ECommerce.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ECommerce.Infrastructure.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ECommerce.Infrastructure.AssemblyInfo.cs
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ECommerce.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ECommerce.Infrastructure.csproj.CopyComplete
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ECommerce.Infrastructure.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/refint/ECommerce.Infrastructure.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ECommerce.Infrastructure.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/obj/Debug/net6.0/ref/ECommerce.Infrastructure.dll
