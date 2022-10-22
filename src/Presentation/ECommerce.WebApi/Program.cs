@@ -1,6 +1,8 @@
 using ECommerce.Application;
 using ECommerce.Infrastructure;
+using ECommerce.Infrastructure.Enums;
 using ECommerce.Infrastructure.Filters;
+using ECommerce.Infrastructure.Services.Storage.Local;
 using ECommerce.Persistence;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +21,8 @@ builder.Services.AddControllers(options=>options.Filters.Add<ValidationFilter>()
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddPersistenceServices();
+builder.Services.AddStorage<LocalStorage>();
+// builder.Services.AddStorage(StorageType.Local);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
