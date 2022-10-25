@@ -64,6 +64,10 @@ namespace ECommerce.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("Storage")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.ToTable("Files");
@@ -143,6 +147,21 @@ namespace ECommerce.Persistence.Migrations
                     b.ToTable("OrderProduct");
                 });
 
+            modelBuilder.Entity("ProductProductImageFile", b =>
+                {
+                    b.Property<Guid>("ProductImageFilesId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("ProductsId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("ProductImageFilesId", "ProductsId");
+
+                    b.HasIndex("ProductsId");
+
+                    b.ToTable("ProductProductImageFile");
+                });
+
             modelBuilder.Entity("ECommerce.Domain.Entities.InvoiceFile", b =>
                 {
                     b.HasBaseType("ECommerce.Domain.Entities.File");
@@ -176,6 +195,21 @@ namespace ECommerce.Persistence.Migrations
                     b.HasOne("ECommerce.Domain.Entities.Order", null)
                         .WithMany()
                         .HasForeignKey("OrdersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ECommerce.Domain.Entities.Product", null)
+                        .WithMany()
+                        .HasForeignKey("ProductsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProductProductImageFile", b =>
+                {
+                    b.HasOne("ECommerce.Domain.Entities.ProductImageFile", null)
+                        .WithMany()
+                        .HasForeignKey("ProductImageFilesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
