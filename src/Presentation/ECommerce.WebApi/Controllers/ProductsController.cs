@@ -1,5 +1,4 @@
 using System.Net;
-using ECommerce.Application.Abstractions.Storage;
 using ECommerce.Application.Features.Commands.Product.CreateProduct;
 using ECommerce.Application.Features.Commands.Product.RemoveProduct;
 using ECommerce.Application.Features.Commands.Product.UpdateProduct;
@@ -8,15 +7,8 @@ using ECommerce.Application.Features.Commands.ProductImageFile.UploadProductImag
 using ECommerce.Application.Features.Queries.Product.GetAllProduct;
 using ECommerce.Application.Features.Queries.Product.GetByIdProduct;
 using ECommerce.Application.Features.Queries.ProductImageFile.GetProductImages;
-using ECommerce.Application.Repositories;
-using ECommerce.Application.Repositories.File;
-using ECommerce.Application.Repositories.InvoiceFile;
-using ECommerce.Application.Repositories.ProductImageFile;
-using ECommerce.Application.RequestParameters;
-using ECommerce.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce.WebApi.Controllers
 {
