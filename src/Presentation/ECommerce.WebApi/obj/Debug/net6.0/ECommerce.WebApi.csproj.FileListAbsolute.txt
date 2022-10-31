@@ -260,3 +260,11 @@
 /Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/ECommerce.Infrastructure.dll
 /Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/ECommerce.Infrastructure.pdb
 /Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/ECommerce.WebApi.staticwebassets.runtime.json
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/Azure.Core.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/Azure.Storage.Blobs.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/Azure.Storage.Common.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/System.IO.Hashing.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/System.Memory.Data.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/MediatR.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/MediatR.Contracts.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

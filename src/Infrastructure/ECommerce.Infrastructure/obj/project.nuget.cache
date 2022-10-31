@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "x1TUCX4ZTDMXUH1/1BHeIncWuk1RQgbr6EHIFg7OjoA8OPXwDYsIAIlz53SzPSCHfGqlLqSqgZWEDhLsQvcKBw==",
+  "dgSpecHash": "J8IiNRtGHkDWAzZH8E4fKrcLCM96HWh/Vy34fC88LDl3dai8lxxWFFNTTSg5bMk3hDIenWEsTNILCqGbkX3yfw==",
   "success": true,
   "projectFilePath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "/Users/cenkerkumlucali/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/azure.storage.blobs/12.14.1/azure.storage.blobs.12.14.1.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/azure.storage.common/12.13.0/azure.storage.common.12.13.0.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/fluentvalidation/11.2.2/fluentvalidation.11.2.2.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/fluentvalidation.aspnetcore/11.2.2/fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.2.2/fluentvalidation.dependencyinjectionextensions.11.2.2.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/microsoft.entityframeworkcore/6.0.9/microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.9/microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.9/microsoft.entityframeworkcore.analyzers.6.0.9.nupkg.sha512",
@@ -20,7 +27,13 @@
     "/Users/cenkerkumlucali/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "/Users/cenkerkumlucali/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "/Users/cenkerkumlucali/.nuget/packages/system.io.hashing/6.0.0/system.io.hashing.6.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

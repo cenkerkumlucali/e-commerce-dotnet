@@ -10,4 +10,12 @@
       <ProjectReference Include="..\..\Core\ECommerce.Application\ECommerce.Application.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Services\Storage\AWS" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.14.1" />
+    </ItemGroup>
+
 </Project>

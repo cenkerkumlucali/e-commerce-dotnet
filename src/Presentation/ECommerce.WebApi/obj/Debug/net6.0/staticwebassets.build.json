@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hlXfuGRYbIUbBmib9A/Nr743PbnOz3Z3Wl6pQE+VXsM=",
+  "Hash": "x3f9fTkRWjifFMclS8iAuuNr+V2V+Q1Vcv3c7Dq7NwE=",
   "Source": "ECommerce.WebApi",
   "BasePath": "_content/ECommerce.WebApi",
   "Mode": "Default",
@@ -34,6 +34,23 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
+      "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/files/kahve-fotoğrafi.jpeg",
+      "SourceId": "ECommerce.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/",
+      "BasePath": "_content/ECommerce.WebApi",
+      "RelativePath": "files/kahve-fotoğrafi.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/files/kahve-fotoğrafi.jpeg"
+    },
+    {
       "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/resource/.DS_Store",
       "SourceId": "ECommerce.WebApi",
       "SourceType": "Discovered",
@@ -51,12 +68,12 @@
       "OriginalItemSpec": "wwwroot/resource/.DS_Store"
     },
     {
-      "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/resource/files/kahve-fotoğrafi.jpeg",
+      "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/resource/files/google-services.json",
       "SourceId": "ECommerce.WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/",
       "BasePath": "_content/ECommerce.WebApi",
-      "RelativePath": "resource/files/kahve-fotoğrafi.jpeg",
+      "RelativePath": "resource/files/google-services.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,24 +82,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/resource/files/kahve-fotoğrafi.jpeg"
-    },
-    {
-      "Identity": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/resource/product-images/kahve-fotoğrafi.jpeg",
-      "SourceId": "ECommerce.WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Presentation/ECommerce.WebApi/wwwroot/",
-      "BasePath": "_content/ECommerce.WebApi",
-      "RelativePath": "resource/product-images/kahve-fotoğrafi.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/resource/product-images/kahve-fotoğrafi.jpeg"
+      "OriginalItemSpec": "wwwroot/resource/files/google-services.json"
     }
   ]
 }
