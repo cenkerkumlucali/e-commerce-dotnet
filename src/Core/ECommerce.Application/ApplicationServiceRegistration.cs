@@ -10,7 +10,7 @@ public static class ApplicationServiceRegistration
     {
         services.AddMediatR(typeof(ApplicationServiceRegistration));
         services.AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<ApplicationRegistration>());
-
+        services.AddHttpClient();
         return services;
     }
 }
