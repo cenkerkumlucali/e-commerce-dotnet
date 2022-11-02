@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Google.Apis.Auth" Version="1.58.0-beta01" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
