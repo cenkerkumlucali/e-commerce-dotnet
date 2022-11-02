@@ -23,10 +23,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers" />
-    </ItemGroup>
-
-    <ItemGroup>
       <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\kahve-fotoğrafi.jpeg" />
       <_ContentIncludedByDefault Remove="wwwroot\resource\.DS_Store" />
       <_ContentIncludedByDefault Remove="wwwroot\.DS_Store" />
