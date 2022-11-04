@@ -1,8 +1,4 @@
-using ECommerce.Application.Features.Commands.Product.CreateProduct;
 using ECommerce.Application.Features.Commands.User.CreateUser;
-using ECommerce.Application.Features.Commands.User.FacebookLogin;
-using ECommerce.Application.Features.Commands.User.GoogleLogin;
-using ECommerce.Application.Features.Commands.User.LoginUser;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

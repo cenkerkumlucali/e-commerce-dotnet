@@ -1,5 +1,6 @@
 using ECommerce.Application.Abstractions.Services;
 using ECommerce.Application.DTOs.User;
+using ECommerce.Application.Exceptions;
 using ECommerce.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 
@@ -7,16 +8,16 @@ namespace ECommerce.Persistence.Services;
 
 public class UserService : IUserService
 {
-    private readonly UserManager<AppUser> _userManager;
+    private readonly UserManager<User> _userManager;
 
-    public UserService(UserManager<AppUser> userManager)
+    public UserService(UserManager<User> userManager)
     {
         _userManager = userManager;
     }
 
     public async Task<CreateUserResponse> CreateAsync(CreateUser createUser)
     {
-        IdentityResult result = await _userManager.CreateAsync(new AppUser
+        IdentityResult result = await _userManager.CreateAsync(new User
         {
             Id = Guid.NewGuid().ToString(),
             UserName = createUser.UserName,
@@ -33,5 +34,18 @@ public class UserService : IUserService
                 response.Message += $"{error.Code} - {error.Description}\n";
 
         return response;
+    }
+
+    public async Task UpdateRefreshToken(string refreshToken, User user, DateTime accessTokenDate,
+        int addOnAccessTokenDate)
+    {
+        if (user is not null)
+        {
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenEndDate = accessTokenDate.AddSeconds(addOnAccessTokenDate);
+            await _userManager.UpdateAsync(user);
+        }
+        else
+            throw new NotFoundUserException();
     }
 }

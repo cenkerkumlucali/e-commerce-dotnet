@@ -24,7 +24,7 @@ public static class ServiceRegistration
     {
         services.AddDbContext<ECommerceDbContext>(options =>
             options.UseNpgsql(Configuration.ConnectionString));
-        services.AddIdentity<AppUser, AppRole>(options =>
+        services.AddIdentity<User, Role>(options =>
         {
             options.Password.RequiredLength = 3;
             options.Password.RequireNonAlphanumeric = false;

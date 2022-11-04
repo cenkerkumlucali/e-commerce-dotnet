@@ -18,12 +18,12 @@ public class TokenHandler:ITokenHandler
         _configuration = configuration;
     }
 
-    public Application.DTOs.Token CreateAccessToken(int minute, AppUser user)
+    public Application.DTOs.Token CreateAccessToken(int minute, User user)
     {
         Application.DTOs.Token token = new();
         SymmetricSecurityKey securityKey = new(Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]));
         SigningCredentials signingCredentials = new(securityKey,SecurityAlgorithms.HmacSha256);
-        token.Expiration = DateTime.UtcNow.AddMinutes(minute);
+        token.Expiration = DateTime.UtcNow.AddSeconds(minute);
         JwtSecurityToken securityToken = new(
             audience: _configuration["Token:Audience"],
             issuer: _configuration["Token:Issuer"],
@@ -34,7 +34,15 @@ public class TokenHandler:ITokenHandler
         );
         JwtSecurityTokenHandler tokenHandler = new();
         token.AccessToken = tokenHandler.WriteToken(securityToken);
-        
+        token.RefreshToken = CreateRefreshToken(); 
         return token;
+    }
+
+    public string CreateRefreshToken()
+    {
+        byte[] number = new byte[32];
+        using RandomNumberGenerator random = RandomNumberGenerator.Create();
+        random.GetBytes(number);
+        return Convert.ToBase64String(number);
     }
 }
