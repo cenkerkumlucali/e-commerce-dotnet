@@ -64,7 +64,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.8, )"
             }
           },
           "imports": [
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -127,7 +127,7 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.8, )"
             }
           },
           "imports": [
@@ -146,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -213,7 +213,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -261,7 +261,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -296,7 +296,67 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/ECommerce.SignalR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/ECommerce.SignalR.csproj",
+        "projectName": "ECommerce.SignalR",
+        "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/ECommerce.SignalR.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Core/ECommerce.Application/ECommerce.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -330,6 +390,9 @@
               },
               "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/ECommerce.Persistence.csproj": {
                 "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Persistence/ECommerce.Persistence.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/ECommerce.SignalR.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/ECommerce.SignalR.csproj"
               }
             }
           }
@@ -358,6 +421,22 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.1-dev-01587, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0-dev-00285, )"
+            },
+            "Serilog.Sinks.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.2.2-dev-00247, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -382,7 +461,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

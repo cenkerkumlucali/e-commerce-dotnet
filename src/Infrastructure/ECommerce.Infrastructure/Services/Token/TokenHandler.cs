@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace ECommerce.Infrastructure.Services.Token;
 
-public class TokenHandler:ITokenHandler
+public class TokenHandler : ITokenHandler
 {
     private readonly IConfiguration _configuration;
 
@@ -22,7 +22,7 @@ public class TokenHandler:ITokenHandler
     {
         Application.DTOs.Token token = new();
         SymmetricSecurityKey securityKey = new(Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]));
-        SigningCredentials signingCredentials = new(securityKey,SecurityAlgorithms.HmacSha256);
+        SigningCredentials signingCredentials = new(securityKey, SecurityAlgorithms.HmacSha256);
         token.Expiration = DateTime.UtcNow.AddSeconds(minute);
         JwtSecurityToken securityToken = new(
             audience: _configuration["Token:Audience"],
@@ -34,7 +34,7 @@ public class TokenHandler:ITokenHandler
         );
         JwtSecurityTokenHandler tokenHandler = new();
         token.AccessToken = tokenHandler.WriteToken(securityToken);
-        token.RefreshToken = CreateRefreshToken(); 
+        token.RefreshToken = CreateRefreshToken();
         return token;
     }
 

@@ -4,7 +4,7 @@ using ECommerce.Persistence.Contexts;
 
 namespace ECommerce.Persistence.Repositories;
 
-public class ProductWriteRepository:WriteRepository<Product>,IProductWriteRepository
+public class ProductWriteRepository : WriteRepository<Product>, IProductWriteRepository
 {
     public ProductWriteRepository(ECommerceDbContext context) : base(context)
     {

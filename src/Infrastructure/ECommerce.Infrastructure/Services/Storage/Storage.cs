@@ -6,7 +6,8 @@ public class Storage
 {
     protected delegate bool HasFile(string pathOrContainerName, string fileName);
 
-    protected async Task<string> FileRenameAsync(string pathOrContainerName, string fileName, HasFile hasFileMethod, bool first = true)
+    protected async Task<string> FileRenameAsync(string pathOrContainerName, string fileName, HasFile hasFileMethod,
+        bool first = true)
     {
         string newFileName = await Task.Run<string>(async () =>
         {
@@ -50,10 +51,11 @@ public class Storage
                         newFileName = $"{Path.GetFileNameWithoutExtension(newFileName)}-2{extension}";
                 }
             }
+
             // File.Exists($"{path}\\{newFileName}")
-            if (hasFileMethod(pathOrContainerName,newFileName))
-                return await FileRenameAsync(pathOrContainerName, newFileName,hasFileMethod, false);
-            
+            if (hasFileMethod(pathOrContainerName, newFileName))
+                return await FileRenameAsync(pathOrContainerName, newFileName, hasFileMethod, false);
+
             else
                 return newFileName;
         });

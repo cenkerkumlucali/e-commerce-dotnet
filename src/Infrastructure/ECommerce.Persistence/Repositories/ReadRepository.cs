@@ -24,22 +24,22 @@ public class ReadRepository<T> : IReadRepository<T> where T : BaseEntity
         return query;
     }
 
-    public IQueryable<T> GetWhere(Expression<Func<T, bool>> expression,bool tracking = true)
+    public IQueryable<T> GetWhere(Expression<Func<T, bool>> expression, bool tracking = true)
     {
         IQueryable<T> query = Table.Where(expression);
         if (!tracking) query = query.AsNoTracking();
         return query;
     }
 
-    public async Task<T> GetSingleAsync(Expression<Func<T, bool>> expression,bool tracking = true)
+    public async Task<T> GetSingleAsync(Expression<Func<T, bool>> expression, bool tracking = true)
     {
         IQueryable<T> query = Table.AsQueryable();
         if (!tracking) query = query.AsNoTracking();
         return await query.FirstOrDefaultAsync(expression);
     }
 
-    public async Task<T> GetByIdAsync(string id,bool tracking = true)
-    // =>await Table.FirstOrDefaultAsync(c => c.Id == Guid.Parse(id));
+    public async Task<T> GetByIdAsync(string id, bool tracking = true)
+        // =>await Table.FirstOrDefaultAsync(c => c.Id == Guid.Parse(id));
     {
         IQueryable<T> query = Table.AsQueryable();
         if (!tracking) query = query.AsNoTracking();

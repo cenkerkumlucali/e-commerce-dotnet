@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.WebApi", "src\Presentation\ECommerce.WebApi\ECommerce.WebApi.csproj", "{D3EFC28F-28EC-421C-9F5A-5F6BC995B468}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.SignalR", "src\Infrastructure\ECommerce.SignalR\ECommerce.SignalR.csproj", "{0184A554-A918-407B-A8DC-CFD5DC4509C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,7 @@ Global
 		{F92C4C87-AD56-4AD7-9EB5-75C7CDFF2795} = {A4E9D961-89B2-4F24-B883-BFE07029B0D4}
 		{BBDE8548-61CE-4F68-A0D3-C3C6587C69F0} = {3D060DE8-12E4-44C3-B3D1-25EE942DA085}
 		{D3EFC28F-28EC-421C-9F5A-5F6BC995B468} = {BBDE8548-61CE-4F68-A0D3-C3C6587C69F0}
+		{0184A554-A918-407B-A8DC-CFD5DC4509C3} = {A4E9D961-89B2-4F24-B883-BFE07029B0D4}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A399F06C-47AE-45B5-92D8-EFD05348BDD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -54,5 +57,9 @@ Global
 		{D3EFC28F-28EC-421C-9F5A-5F6BC995B468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3EFC28F-28EC-421C-9F5A-5F6BC995B468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3EFC28F-28EC-421C-9F5A-5F6BC995B468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0184A554-A918-407B-A8DC-CFD5DC4509C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0184A554-A918-407B-A8DC-CFD5DC4509C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0184A554-A918-407B-A8DC-CFD5DC4509C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0184A554-A918-407B-A8DC-CFD5DC4509C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

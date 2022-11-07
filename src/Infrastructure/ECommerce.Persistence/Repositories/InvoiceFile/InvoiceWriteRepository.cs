@@ -3,7 +3,7 @@ using ECommerce.Persistence.Contexts;
 
 namespace ECommerce.Persistence.Repositories.InvoiceFile;
 
-public class InvoiceWriteRepository:WriteRepository<Domain.Entities.InvoiceFile>,IInvoiceWriteRepository
+public class InvoiceWriteRepository : WriteRepository<Domain.Entities.InvoiceFile>, IInvoiceWriteRepository
 {
     public InvoiceWriteRepository(ECommerceDbContext context) : base(context)
     {

@@ -22,7 +22,7 @@ public class GetProductImagesQueryHandler: IRequestHandler<GetProductImagesQuery
             .FirstOrDefaultAsync(p => p.Id == Guid.Parse(request.Id));
         return product?.ProductImageFiles.Select(p => new GetProductImagesQueryResponse
         {
-            Path = $"{configuration["BaseStorageUrl"]}/{p.Path}",
+            Path = $"{configuration["BaseStorageUrl"]}{p.Path}",
             FileName = p.FileName,
             Id = p.Id
         }).ToList();

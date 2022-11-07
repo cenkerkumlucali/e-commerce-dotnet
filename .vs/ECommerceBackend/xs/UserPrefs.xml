@@ -1,22 +1,7 @@
 ﻿<Properties StartupConfiguration="{D3EFC28F-28EC-421C-9F5A-5F6BC995B468}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/Services/FileService.cs" relfile="src/Infrastructure/ECommerce.Infrastructure/Services/FileService.cs" line="34" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.src.Presentation.ECommerce.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Infrastructure/ECommerce.Infrastructure/Services/FileService.cs">
-    <Files>
-      <File FileName="src/Core/ECommerce.Domain/Entities/Common/BaseEntity.cs" Line="7" Column="46" />
-      <File FileName="src/Core/ECommerce.Domain/Entities/Customer.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ECommerce.Domain/Entities/Order.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ECommerce.Domain/Entities/Product.cs" Line="1" Column="1" />
-      <File FileName="src/Infrastructure/ECommerce.Persistence/Contexts/ECommerceDbContext.cs" Line="35" Column="2" />
-      <File FileName="src/Infrastructure/ECommerce.Infrastructure/Services/FileService.cs" Line="17" Column="10" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -38,11 +23,10 @@
                 </Node>
               </Node>
               <Node name="Presentation" expanded="True">
-                <Node name="ECommerce.WebApi" expanded="True" selected="True">
+                <Node name="ECommerce.WebApi" expanded="True">
                   <Node name="wwwroot" expanded="True">
                     <Node name="resource" expanded="True">
                       <Node name="files" expanded="True" />
-                      <Node name="product-images" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
@@ -56,4 +40,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.Infrastructure/Services/FileService.cs" relfile="src/Infrastructure/ECommerce.Infrastructure/Services/FileService.cs" line="34" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.src.Presentation.ECommerce.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

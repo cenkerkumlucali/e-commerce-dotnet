@@ -4,6 +4,5 @@ namespace ECommerce.Infrastructure.Services
 {
     public class FileService
     {
-       
     }
 }

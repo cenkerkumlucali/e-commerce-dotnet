@@ -24,12 +24,17 @@
       <ProjectReference Include="..\..\Core\ECommerce.Application\ECommerce.Application.csproj" />
       <ProjectReference Include="..\..\Infrastructure\ECommerce.Infrastructure\ECommerce.Infrastructure.csproj" />
       <ProjectReference Include="..\..\Infrastructure\ECommerce.Persistence\ECommerce.Persistence.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\ECommerce.SignalR\ECommerce.SignalR.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\kahve-fotoğrafi.jpeg" />
       <_ContentIncludedByDefault Remove="wwwroot\resource\.DS_Store" />
       <_ContentIncludedByDefault Remove="wwwroot\.DS_Store" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Middlewares" />
     </ItemGroup>
 
 </Project>

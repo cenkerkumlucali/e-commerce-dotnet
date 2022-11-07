@@ -3,7 +3,7 @@ using ECommerce.Persistence.Contexts;
 
 namespace ECommerce.Persistence.Repositories.InvoiceFile;
 
-public class InvoiceReadRepository:ReadRepository<Domain.Entities.InvoiceFile>,IInvoiceReadRepository
+public class InvoiceReadRepository : ReadRepository<Domain.Entities.InvoiceFile>, IInvoiceReadRepository
 {
     public InvoiceReadRepository(ECommerceDbContext context) : base(context)
     {

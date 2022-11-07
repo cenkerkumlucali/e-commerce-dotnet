@@ -5,7 +5,9 @@ using ECommerce.Infrastructure;
 using ECommerce.Infrastructure.Filters;
 using ECommerce.Infrastructure.Services.Storage.Azure;
 using ECommerce.Persistence;
+using ECommerce.SignalR;
 using ECommerce.WebApi.Configurations.ColumnWriters;
+using ECommerce.WebApi.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
@@ -19,6 +21,7 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
     policy.WithOrigins("http://localhost:4200", "https://localhost:4200/")
         .AllowAnyHeader()
         .AllowAnyMethod()
+        .AllowCredentials()
 ));
 Logger log = new LoggerConfiguration()
     .WriteTo.Console()
@@ -42,12 +45,14 @@ Logger log = new LoggerConfiguration()
 builder.Host.UseSerilog(log);
 builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
     .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
-
+builder.Services.AddHttpContextAccessor();//Clientten gelen reqyest neticeside oluşturulan HttpContext nesneine katmanlardaki class'lşar üzerinden(business logic) erişebilmemizi sağlayan servistir.
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices();
+builder.Services.AddSignalRServices();
 builder.Services.AddPersistenceServices();
-// builder.Services.AddStorage<LocalStorage>();
+
 builder.Services.AddStorage<AzureStorage>();
+// builder.Services.AddStorage<LocalStorage>();
 // builder.Services.AddStorage(StorageType.Local);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -83,9 +88,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.ConfigureExceptionHandler(app.Services.GetRequiredService<ILogger<Program>>());
+
 app.UseStaticFiles();
 
-app.UseSerilogRequestLogging();//Kendisinden önce olan middlewarelerin logunu tutmuyor sonra olanları dikkate alıyor.
+app.UseSerilogRequestLogging(); //Kendisinden önce olan middlewarelerin logunu tutmuyor sonra olanları dikkate alıyor.
 
 app.UseCors();
 
@@ -103,5 +110,7 @@ app.Use(async (context, next) =>
 });
 
 app.MapControllers();
+
+app.MapHubs();
 
 app.Run();
