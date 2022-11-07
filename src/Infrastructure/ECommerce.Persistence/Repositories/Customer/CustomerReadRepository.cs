@@ -4,7 +4,7 @@ using ECommerce.Persistence.Contexts;
 
 namespace ECommerce.Persistence.Repositories;
 
-public class CustomerReadRepository:ReadRepository<Customer>,ICustomerReadRepository
+public class CustomerReadRepository : ReadRepository<Customer>, ICustomerReadRepository
 {
     public CustomerReadRepository(ECommerceDbContext context) : base(context)
     {
