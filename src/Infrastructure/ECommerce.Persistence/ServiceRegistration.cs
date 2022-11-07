@@ -2,12 +2,16 @@ using System.Configuration;
 using ECommerce.Application.Abstractions.Services;
 using ECommerce.Application.Abstractions.Services.Authentications;
 using ECommerce.Application.Repositories;
+using ECommerce.Application.Repositories.Basket;
+using ECommerce.Application.Repositories.BasketItem;
 using ECommerce.Application.Repositories.File;
 using ECommerce.Application.Repositories.InvoiceFile;
 using ECommerce.Application.Repositories.ProductImageFile;
 using ECommerce.Domain.Entities.Identity;
 using ECommerce.Persistence.Contexts;
 using ECommerce.Persistence.Repositories;
+using ECommerce.Persistence.Repositories.Basket;
+using ECommerce.Persistence.Repositories.BasketItem;
 using ECommerce.Persistence.Repositories.File;
 using ECommerce.Persistence.Repositories.InvoiceFile;
 using ECommerce.Persistence.Repositories.ProductImageFile;
@@ -50,12 +54,19 @@ public static class ServiceRegistration
 
         services.AddScoped<IInvoiceReadRepository, InvoiceReadRepository>();
         services.AddScoped<IInvoiceWriteRepository, InvoiceWriteRepository>();
-        
+
+        services.AddScoped<IBasketReadRepository, BasketReadRepository>();
+        services.AddScoped<IBasketWriteRepository, BasketWriteRepository>();
+
+        services.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>();
+        services.AddScoped<IBasketItemWriteRepository, BasketItemWriteRepository>();
+
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IBasketService, BasketService>();
         services.AddScoped<IExternalAuthentication, AuthService>();
         services.AddScoped<IInternalAuthentication, AuthService>();
-        
+
         return services;
     }
 }
