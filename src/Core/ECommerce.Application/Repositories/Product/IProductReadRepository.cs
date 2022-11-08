@@ -1,8 +1,6 @@
-using ECommerce.Domain.Entities;
+namespace ECommerce.Application.Repositories.Product;
 
-namespace ECommerce.Application.Repositories;
-
-public interface IProductReadRepository:IReadRepository<Product>
+public interface IProductReadRepository:IReadRepository<Domain.Entities.Product>
 {
     
 }

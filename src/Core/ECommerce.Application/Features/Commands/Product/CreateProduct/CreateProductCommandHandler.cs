@@ -1,5 +1,6 @@
 using ECommerce.Application.Abstractions.Hubs;
 using ECommerce.Application.Repositories;
+using ECommerce.Application.Repositories.Product;
 using MediatR;
 
 namespace ECommerce.Application.Features.Commands.Product.CreateProduct;

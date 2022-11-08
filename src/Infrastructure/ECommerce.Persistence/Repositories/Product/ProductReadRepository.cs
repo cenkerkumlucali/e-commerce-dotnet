@@ -1,4 +1,5 @@
 using ECommerce.Application.Repositories;
+using ECommerce.Application.Repositories.Product;
 using ECommerce.Domain.Entities;
 using ECommerce.Persistence.Contexts;
 

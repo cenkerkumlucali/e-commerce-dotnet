@@ -1,5 +1,6 @@
 using ECommerce.Application.Abstractions.Storage;
 using ECommerce.Application.Repositories;
+using ECommerce.Application.Repositories.Product;
 using ECommerce.Application.Repositories.ProductImageFile;
 using MediatR;
 

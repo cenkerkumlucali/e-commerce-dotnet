@@ -26,9 +26,10 @@ public class ECommerceDbContext : IdentityDbContext<User, Role, string>
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {
         // ChangeTracker : Entityler üzerinde yapılan değişikliklerin yada yeni eklenen verilerin yakalanmasını sağlanan property. Update operasyonlarında Track edilen verileri yakalayıp elde etmemizi sağlar
-
+        
         IEnumerable<EntityEntry<BaseEntity>> datas = ChangeTracker
-            .Entries<BaseEntity>();
+            .Entries<BaseEntity>().Where(e =>
+                e.State == EntityState.Added || e.State == EntityState.Modified);;
 
         foreach (var data in datas)
             _ = data.State switch
@@ -45,6 +46,10 @@ public class ECommerceDbContext : IdentityDbContext<User, Role, string>
     {
         builder.Entity<Order>()
             .HasKey(c => c.Id);
+
+        builder.Entity<Order>()
+            .HasIndex(c => c.OrderCode)
+            .IsUnique();
         
         builder.Entity<Basket>()
             .HasOne(c => c.Order)

@@ -1,4 +1,4 @@
-namespace ECommerce.Application.ViewModels.Baskets;
+namespace ECommerce.Application.DTOs.Baskets;
 
 public class CreateBasketItem
 {

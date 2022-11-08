@@ -1,8 +1,6 @@
-using ECommerce.Domain.Entities;
+namespace ECommerce.Application.Repositories.Customer;
 
-namespace ECommerce.Application.Repositories;
-
-public interface ICustomerWriteRepository:IWriteRepository<Customer>
+public interface ICustomerWriteRepository:IWriteRepository<Domain.Entities.Customer>
 {
     
 }

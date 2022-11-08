@@ -1,8 +1,8 @@
 using ECommerce.Application.Abstractions.Services;
-using ECommerce.Application.Repositories;
+using ECommerce.Application.DTOs.Baskets;
 using ECommerce.Application.Repositories.Basket;
 using ECommerce.Application.Repositories.BasketItem;
-using ECommerce.Application.ViewModels.Baskets;
+using ECommerce.Application.Repositories.Order;
 using ECommerce.Domain.Entities;
 using ECommerce.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Http;
@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce.Persistence.Services;
 
-public class BasketService:IBasketService
+public class BasketService : IBasketService
 {
     private readonly IHttpContextAccessor _httpContextAccessor;
     private readonly UserManager<User?> _userManager;
@@ -22,11 +22,11 @@ public class BasketService:IBasketService
     private readonly IBasketItemReadRepository _basketItemReadRepository;
 
     public BasketService(
-        IHttpContextAccessor httpContextAccessor, 
+        IHttpContextAccessor httpContextAccessor,
         UserManager<User?> userManager, IOrderReadRepository orderReadRepository,
         IBasketWriteRepository basketWriteRepository,
-        IBasketItemWriteRepository basketItemWriteRepository, 
-        IBasketItemReadRepository basketItemReadRepository, 
+        IBasketItemWriteRepository basketItemWriteRepository,
+        IBasketItemReadRepository basketItemReadRepository,
         IBasketReadRepository basketReadRepository)
     {
         _httpContextAccessor = httpContextAccessor;
@@ -63,12 +63,14 @@ public class BasketService:IBasketService
                 targetBasket = new();
                 user.Baskets.Add(targetBasket);
             }
+
             await _basketWriteRepository.SaveAsync();
             return targetBasket;
         }
 
         throw new Exception("Beklenmeyen bir hata ile karşılaşıldı");
     }
+
     public async Task<List<BasketItem>> GetBasketItemsAsync()
     {
         Basket basket = await ContextUser();
@@ -93,7 +95,7 @@ public class BasketService:IBasketService
                 {
                     BasketId = basket.Id,
                     ProductId = Guid.Parse(basketItem.ProductId),
-                    Quantity =basketItem.Quantity
+                    Quantity = basketItem.Quantity
                 });
             await _basketItemWriteRepository.SaveAsync();
         }
@@ -118,4 +120,6 @@ public class BasketService:IBasketService
             await _basketItemWriteRepository.SaveAsync();
         }
     }
+
+    public Basket? GetUserActiveBasket => ContextUser().Result;
 }

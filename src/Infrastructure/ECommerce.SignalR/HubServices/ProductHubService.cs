@@ -13,8 +13,5 @@ public class ProductHubService : IProductHubService
         _hubContext = hubContext;
     }
 
-    public async Task ProductAddedMessageAsync(string message)
-    {
-        await _hubContext.Clients.All.SendAsync(ReceiveFunctionNames.ProductAddedMessage, message);
-    }
+    public async Task ProductAddedMessageAsync(string message) => await _hubContext.Clients.All.SendAsync(ReceiveFunctionNames.ProductAddedMessage, message);
 }

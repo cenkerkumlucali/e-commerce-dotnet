@@ -1,0 +1,17 @@
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/bin/Debug/net6.0/ECommerce.SignalR.deps.json
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/bin/Debug/net6.0/ECommerce.SignalR.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/bin/Debug/net6.0/ECommerce.SignalR.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/bin/Debug/net6.0/ECommerce.Application.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/bin/Debug/net6.0/ECommerce.Domain.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/bin/Debug/net6.0/ECommerce.Application.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/bin/Debug/net6.0/ECommerce.Domain.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ECommerce.SignalR.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ECommerce.SignalR.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ECommerce.SignalR.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ECommerce.SignalR.AssemblyInfo.cs
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ECommerce.SignalR.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ECommerce.SignalR.csproj.CopyComplete
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ECommerce.SignalR.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/refint/ECommerce.SignalR.dll
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ECommerce.SignalR.pdb
+/Users/cenkerkumlucali/codes/e-commerce/ECommerceBackend/src/Infrastructure/ECommerce.SignalR/obj/Debug/net6.0/ref/ECommerce.SignalR.dll

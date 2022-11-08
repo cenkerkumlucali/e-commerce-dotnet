@@ -1,8 +1,6 @@
-using ECommerce.Domain.Entities;
+namespace ECommerce.Application.Repositories.Product;
 
-namespace ECommerce.Application.Repositories;
-
-public interface IProductWriteRepository:IWriteRepository<Product>
+public interface IProductWriteRepository:IWriteRepository<Domain.Entities.Product>
 {
     
 }
