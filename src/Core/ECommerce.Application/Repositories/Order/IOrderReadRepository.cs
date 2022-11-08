@@ -1,8 +1,6 @@
-using ECommerce.Domain.Entities;
+namespace ECommerce.Application.Repositories.Order;
 
-namespace ECommerce.Application.Repositories;
-
-public interface IOrderReadRepository:IReadRepository<Order>
+public interface IOrderReadRepository:IReadRepository<Domain.Entities.Order>
 {
     
 }

@@ -9,6 +9,7 @@ public static class SignalRServiceRegistration
     public static IServiceCollection AddSignalRServices(this IServiceCollection services)
     {
         services.AddTransient<IProductHubService, ProductHubService>();
+        services.AddTransient<IOrderHubService, OrderHubService>();
         services.AddSignalR();
         return services;
     }

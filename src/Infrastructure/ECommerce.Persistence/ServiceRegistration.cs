@@ -4,8 +4,11 @@ using ECommerce.Application.Abstractions.Services.Authentications;
 using ECommerce.Application.Repositories;
 using ECommerce.Application.Repositories.Basket;
 using ECommerce.Application.Repositories.BasketItem;
+using ECommerce.Application.Repositories.Customer;
 using ECommerce.Application.Repositories.File;
 using ECommerce.Application.Repositories.InvoiceFile;
+using ECommerce.Application.Repositories.Order;
+using ECommerce.Application.Repositories.Product;
 using ECommerce.Application.Repositories.ProductImageFile;
 using ECommerce.Domain.Entities.Identity;
 using ECommerce.Persistence.Contexts;
@@ -64,6 +67,7 @@ public static class ServiceRegistration
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IBasketService, BasketService>();
+        services.AddScoped<IOrderService, OrderService>();
         services.AddScoped<IExternalAuthentication, AuthService>();
         services.AddScoped<IInternalAuthentication, AuthService>();
 

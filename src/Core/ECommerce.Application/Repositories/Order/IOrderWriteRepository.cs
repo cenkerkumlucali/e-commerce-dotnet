@@ -1,8 +1,6 @@
-using ECommerce.Domain.Entities;
+namespace ECommerce.Application.Repositories.Order;
 
-namespace ECommerce.Application.Repositories;
-
-public interface IOrderWriteRepository:IWriteRepository<Order>
+public interface IOrderWriteRepository:IWriteRepository<Domain.Entities.Order>
 {
     
 }
