@@ -21,6 +21,7 @@ public class ECommerceDbContext : IdentityDbContext<User, Role, string>
     public DbSet<InvoiceFile> InvoiceFiles { get; set; }
     public DbSet<Basket> Baskets { get; set; }
     public DbSet<BasketItem> BasketItems { get; set; }
+    public DbSet<CompletedOrder> CompletedOrders { get; set; }
 
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
@@ -29,14 +30,13 @@ public class ECommerceDbContext : IdentityDbContext<User, Role, string>
         
         IEnumerable<EntityEntry<BaseEntity>> datas = ChangeTracker
             .Entries<BaseEntity>().Where(e =>
-                e.State == EntityState.Added || e.State == EntityState.Modified);;
+                e.State == EntityState.Added || e.State == EntityState.Modified);
 
         foreach (var data in datas)
             _ = data.State switch
             {
                 EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow,
                 EntityState.Modified => data.Entity.UpdatedDate = DateTime.UtcNow,
-                _ => DateTime.UtcNow
             };
 
         return await base.SaveChangesAsync(cancellationToken);
@@ -55,6 +55,13 @@ public class ECommerceDbContext : IdentityDbContext<User, Role, string>
             .HasOne(c => c.Order)
             .WithOne(c => c.Basket)
             .HasForeignKey<Order>(c => c.Id);
+
+
+        builder.Entity<Order>()
+            .HasOne(c => c.CompletedOrder)
+            .WithOne(c => c.Order)
+            .HasForeignKey<CompletedOrder>(c => c.OrderId);
+
         base.OnModelCreating(builder);
     }
 }
