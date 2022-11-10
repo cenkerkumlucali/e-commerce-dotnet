@@ -1,12 +1,15 @@
+using System.Text;
 using System.Text.Json;
 using ECommerce.Application.Abstractions.Services;
 using ECommerce.Application.Abstractions.Token;
 using ECommerce.Application.DTOs;
 using ECommerce.Application.DTOs.Facebook;
 using ECommerce.Application.Exceptions;
+using ECommerce.Application.Helpers;
 using ECommerce.Domain.Entities.Identity;
 using Google.Apis.Auth;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -20,13 +23,15 @@ public class AuthService : IAuthService
     readonly ITokenHandler _tokenHandler;
     readonly SignInManager<User> _signInManager;
     readonly IUserService _userService;
+    private readonly IMailService _mailService;
 
     public AuthService(IHttpClientFactory httpClientFactory,
         IConfiguration configuration,
         UserManager<User> userManager,
         ITokenHandler tokenHandler,
         SignInManager<User> signInManager,
-        IUserService userService)
+        IUserService userService,
+        IMailService mailService)
     {
         _httpClient = httpClientFactory.CreateClient();
         _configuration = configuration;
@@ -34,6 +39,7 @@ public class AuthService : IAuthService
         _tokenHandler = tokenHandler;
         _signInManager = signInManager;
         _userService = userService;
+        _mailService = mailService;
     }
 
     async Task<Token> CreateUserExternalAsync(User user, string email, string name, UserLoginInfo info,
@@ -62,7 +68,7 @@ public class AuthService : IAuthService
             await _userManager.AddLoginAsync(user, info); //AspNetUserLogins
 
             Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
-            await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 900);
+            await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 900);
             return token;
         }
 
@@ -128,7 +134,7 @@ public class AuthService : IAuthService
         if (result.Succeeded) //Authentication başarılı!
         {
             Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
-            await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 1200);
+            await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 1200);
             return token;
         }
 
@@ -141,10 +147,36 @@ public class AuthService : IAuthService
         if (user is not null && user?.RefreshTokenEndDate > DateTime.UtcNow)
         {
             Token token = _tokenHandler.CreateAccessToken(900, user);
-            await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 1200);
+            await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 1200);
             return token;
         }
         else
             throw new NotFoundUserException();
+    }
+
+    public async Task PasswordResetAsync(string email)
+    {
+        User? user = await _userManager.FindByEmailAsync(email);
+        if (user is not null)
+        {
+            string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+            byte[] bytes = Encoding.UTF8.GetBytes(resetToken);
+            resetToken = WebEncoders.Base64UrlEncode(bytes);
+            await _mailService.SendPasswordResetMailAsync(email, user.Id, resetToken);
+        }
+    }
+
+    public async Task<bool> VerifyResetTokenAsync(string resetToken, string userId)
+    {
+        User user = await _userManager.FindByIdAsync(userId);
+        if (user is not null)
+        {
+            byte[] bytes = WebEncoders.Base64UrlDecode(resetToken);
+            resetToken = Encoding.UTF8.GetString(bytes);
+            return await _userManager.VerifyUserTokenAsync(user, _userManager.Options.Tokens.PasswordResetTokenProvider,
+                "ResetPassword", resetToken);
+        }
+
+        return false;
     }
 }
