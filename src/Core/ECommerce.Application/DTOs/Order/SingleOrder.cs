@@ -8,4 +8,5 @@ public class SingleOrder
     public DateTime CreatedDate { get; set; }
     public string Description { get; set; }
     public string OrderCode { get; set; }
+    public bool Completed { get; set; }
 }

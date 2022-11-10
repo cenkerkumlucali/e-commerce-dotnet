@@ -15,7 +15,7 @@ public class GetByIdOrderQueryHandler:IRequestHandler<GetByIdOrderQueryRequest,G
 
     public async Task<GetByIdOrderQueryResponse> Handle(GetByIdOrderQueryRequest request, CancellationToken cancellationToken)
     {
-        SingleOrder data = await _orderService.GetOrderById(request.Id);
+        SingleOrder data = await _orderService.GetOrderByIdAsync(request.Id);
         return new GetByIdOrderQueryResponse
         {
             Id = data?.Id,
@@ -23,7 +23,8 @@ public class GetByIdOrderQueryHandler:IRequestHandler<GetByIdOrderQueryRequest,G
             Address = data.Address,
             CreatedDate = data.CreatedDate,
             Description = data.Description,
-            OrderCode = data.OrderCode
+            OrderCode = data.OrderCode,
+            Completed = data.Completed
         };
     }
 }

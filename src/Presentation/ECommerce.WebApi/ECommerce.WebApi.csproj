@@ -33,8 +33,4 @@
       <_ContentIncludedByDefault Remove="wwwroot\.DS_Store" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Middlewares" />
-    </ItemGroup>
-
 </Project>

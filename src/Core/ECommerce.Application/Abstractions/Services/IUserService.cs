@@ -6,5 +6,6 @@ namespace ECommerce.Application.Abstractions.Services;
 public interface IUserService
 {
     Task<CreateUserResponse> CreateAsync(CreateUser createUser);
-    Task UpdateRefreshToken(string refreshToken, User user, DateTime accessTokenDate, int addOnAccessTokenDate);
+    Task UpdateRefreshTokenAsync(string refreshToken, User user, DateTime accessTokenDate, int addOnAccessTokenDate);
+    Task UpdatePasswordAsync(string userId,string resetToken,string newPassword);
 }
