@@ -1,10 +1,12 @@
 using System.Threading.Tasks.Dataflow;
 using ECommerce.Application.Abstractions.Services;
+using ECommerce.Application.Abstractions.Services.Configurations;
 using ECommerce.Application.Abstractions.Storage;
 using ECommerce.Application.Abstractions.Storage.Azure;
 using ECommerce.Application.Abstractions.Token;
 using ECommerce.Infrastructure.Enums;
 using ECommerce.Infrastructure.Services;
+using ECommerce.Infrastructure.Services.Configurations;
 using ECommerce.Infrastructure.Services.Storage;
 using ECommerce.Infrastructure.Services.Storage.Azure;
 using ECommerce.Infrastructure.Services.Storage.Local;
@@ -21,6 +23,7 @@ public static class ServiceRegistration
         services.AddScoped<IAzureStorage, AzureStorage>();
         services.AddScoped<ITokenHandler, TokenHandler>();
         services.AddScoped<IMailService, MailService>();
+        services.AddScoped<IApplicationService, ApplicationService>();
         return services;
     }
 
