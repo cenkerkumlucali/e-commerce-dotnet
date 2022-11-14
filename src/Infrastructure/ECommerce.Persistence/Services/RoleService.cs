@@ -8,6 +8,7 @@ namespace ECommerce.Persistence.Services;
 public class RoleService : IRoleService
 {
     private readonly RoleManager<Role> _roleManager;
+
     public RoleService(RoleManager<Role> roleManager)
     {
         _roleManager = roleManager;
@@ -16,7 +17,11 @@ public class RoleService : IRoleService
     public ListRole GetAllRoles(int page, int size)
     {
         IQueryable<Role>? query = _roleManager.Roles;
-        List<Role> result = query.Skip(page * size).Take(size).ToList();
+        List<Role>? result;
+        if (page == -1 && size == -1)
+            result = query.ToList();
+        else
+            result = query.Skip(page * size).Take(size).ToList();
         return new ListRole
         {
             Roles = result,
