@@ -6,8 +6,10 @@ using ECommerce.Application.Repositories.Basket;
 using ECommerce.Application.Repositories.BasketItem;
 using ECommerce.Application.Repositories.CompletedOrder;
 using ECommerce.Application.Repositories.Customer;
+using ECommerce.Application.Repositories.Endpoint;
 using ECommerce.Application.Repositories.File;
 using ECommerce.Application.Repositories.InvoiceFile;
+using ECommerce.Application.Repositories.Menu;
 using ECommerce.Application.Repositories.Order;
 using ECommerce.Application.Repositories.Product;
 using ECommerce.Application.Repositories.ProductImageFile;
@@ -17,8 +19,10 @@ using ECommerce.Persistence.Repositories;
 using ECommerce.Persistence.Repositories.Basket;
 using ECommerce.Persistence.Repositories.BasketItem;
 using ECommerce.Persistence.Repositories.CompletedOrder;
+using ECommerce.Persistence.Repositories.Endpoint;
 using ECommerce.Persistence.Repositories.File;
 using ECommerce.Persistence.Repositories.InvoiceFile;
+using ECommerce.Persistence.Repositories.Menu;
 using ECommerce.Persistence.Repositories.ProductImageFile;
 using ECommerce.Persistence.Services;
 using Microsoft.AspNetCore.Identity;
@@ -70,12 +74,19 @@ public static class ServiceRegistration
         
         services.AddScoped<ICompletedOrderReadRepository, CompletedOrderReadRepository>();
         services.AddScoped<ICompletedOrderWriteRepository, CompletedOrderWriteRepository>();
+        
+        services.AddScoped<IMenuReadRepository, MenuReadRepository>();
+        services.AddScoped<IMenuWriteRepository, MenuWriteRepository>();
+        
+        services.AddScoped<IEndpointReadRepository, EndpointReadRepository>();
+        services.AddScoped<IEndpointWriteRepository,EndpointWriteRepository>();
 
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IBasketService, BasketService>();
         services.AddScoped<IOrderService, OrderService>();
         services.AddScoped<IRoleService, RoleService>();
+        services.AddScoped<IAuthorizationEndpointService, AuthorizationEndpointService>();
         services.AddScoped<IExternalAuthentication, AuthService>();
         services.AddScoped<IInternalAuthentication, AuthService>();
 
