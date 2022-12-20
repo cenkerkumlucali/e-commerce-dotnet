@@ -23,26 +23,26 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
         .AllowAnyMethod()
         .AllowCredentials()
 ));
-Logger log = new LoggerConfiguration()
-    .WriteTo.Console()
-    // .WriteTo.File("logs/log.txt")
-    .WriteTo.PostgreSQL(builder.Configuration.GetConnectionString("PostgreSQL"), "logs", needAutoCreateTable: true,
-        columnOptions: new Dictionary<string, ColumnWriterBase>
-        {
-            { "message", new RenderedMessageColumnWriter() },
-            { "message_template", new MessageTemplateColumnWriter() },
-            { "level", new LevelColumnWriter() },
-            { "time_stamp", new TimestampColumnWriter() },
-            { "exception", new ExceptionColumnWriter() },
-            { "log_event", new LogEventSerializedColumnWriter() },
-            { "user_name", new UsernameColumnWriter() }
-        })
-    .Enrich.FromLogContext()
-    .MinimumLevel.Information()
-    .WriteTo.Seq(builder.Configuration["Seq:ServerUrl"])
-    .CreateLogger();
+// Logger log = new LoggerConfiguration()
+//     .WriteTo.Console()
+//     // .WriteTo.File("logs/log.txt")
+//     .WriteTo.PostgreSQL(builder.Configuration.GetConnectionString("PostgreSQL"), "logs", needAutoCreateTable: true,
+//         columnOptions: new Dictionary<string, ColumnWriterBase>
+//         {
+//             { "message", new RenderedMessageColumnWriter() },
+//             { "message_template", new MessageTemplateColumnWriter() },
+//             { "level", new LevelColumnWriter() },
+//             { "time_stamp", new TimestampColumnWriter() },
+//             { "exception", new ExceptionColumnWriter() },
+//             { "log_event", new LogEventSerializedColumnWriter() },
+//             { "user_name", new UsernameColumnWriter() }
+//         })
+//     .Enrich.FromLogContext()
+//     .MinimumLevel.Information()
+//     .WriteTo.Seq(builder.Configuration["Seq:ServerUrl"])
+//     .CreateLogger();
 
-builder.Host.UseSerilog(log);
+// builder.Host.UseSerilog(log);
 builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
     .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
 builder.Services.AddHttpContextAccessor();//Clientten gelen reqyest neticeside oluşturulan HttpContext nesneine katmanlardaki class'lşar üzerinden(business logic) erişebilmemizi sağlayan servistir.
@@ -92,7 +92,7 @@ app.ConfigureExceptionHandler(app.Services.GetRequiredService<ILogger<Program>>(
 
 app.UseStaticFiles();
 
-app.UseSerilogRequestLogging(); //Kendisinden önce olan middlewarelerin logunu tutmuyor sonra olanları dikkate alıyor.
+// app.UseSerilogRequestLogging(); //Kendisinden önce olan middlewarelerin logunu tutmuyor sonra olanları dikkate alıyor.
 
 app.UseCors();
 
@@ -102,12 +102,12 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
-app.Use(async (context, next) =>
-{
-    var username = context.User?.Identity?.IsAuthenticated != null || true ? context.User.Identity.Name : null;
-    LogContext.PushProperty("user_name", username);
-    await next();
-});
+// app.Use(async (context, next) =>
+// {
+//     var username = context.User?.Identity?.IsAuthenticated != null || true ? context.User.Identity.Name : null;
+//     LogContext.PushProperty("user_name", username);
+//     await next();
+// });
 
 app.MapControllers();
 
